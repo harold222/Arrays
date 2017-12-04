@@ -24,9 +24,9 @@ public class Array {
         int cont=0;
 
         for (int i = 0; i < b.length; i++) {
-            for (int j = i+1; j < b.length; j++) {
+            for (int j = i+1; j < b.length; j++) 
                 if(k==Math.abs(Integer.parseInt(b[i])- Integer.parseInt(b[j])))
-                    cont +=1;} }
+                    cont ++; }
 
         bw.write("El contador es: "+cont+"\n");
         bw.flush();}
